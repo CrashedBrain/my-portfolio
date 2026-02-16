@@ -2,34 +2,36 @@
 
 import { motion } from "framer-motion";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/my-portfolio' : '';
+
 const projects = [
     {
         id: 1,
         title: "Prismio",
         desc: "Interactive 3D Learning App",
         tags: ["Flutter", "3D Visualization", "Education UI"],
-        image: "/prismio.png"
+        image: `${basePath}/prismio.png`
     },
     {
         id: 2,
         title: "Jersey Shop",
         desc: "Modern Sports E-Commerce Design",
         tags: ["Web Design", "UI/UX", "Figma"],
-        image: "/jersey_shop.png"
+        image: `${basePath}/jersey_shop.png`
     },
     {
         id: 3,
         title: "Car Rental System",
         desc: "Vehicle Booking Platform with Admin Panel",
         tags: ["PHP", "HTML/CSS", "MySQL"],
-        image: "/car_rental.png"
+        image: `${basePath}/car_rental.png`
     },
     {
         id: 4,
         title: "Music Player App",
         desc: "Sleek Audio Streaming Interface",
         tags: ["Mobile App", "UI Design", "Visuals"],
-        image: "/music_player.jpg"
+        image: `${basePath}/music_player.jpg`
     },
 ];
 
