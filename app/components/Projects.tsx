@@ -1,8 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { getBasePath } from "../utils/basePath";
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+const basePath = getBasePath();
 
 const projects = [
     {

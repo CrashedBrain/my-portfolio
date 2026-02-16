@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useScroll, useTransform, useMotionValueEvent, useSpring } from "framer-motion";
 import Overlay from "./Overlay";
+import { getBasePath } from "../utils/basePath";
 
 export default function ScrollyCanvas() {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -74,7 +75,7 @@ export default function ScrollyCanvas() {
             for (let i = 0; i < frameCount; i++) {
                 const img = new Image();
                 // Construct filename with base path for GitHub Pages
-                const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+                const basePath = getBasePath();
                 const filename = `${basePath}/sequence/img_${i.toString().padStart(3, "0")}.webp`;
                 img.src = filename;
 
