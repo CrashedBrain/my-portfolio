@@ -74,7 +74,7 @@ export default function ScrollyCanvas() {
             for (let i = 0; i < frameCount; i++) {
                 const img = new Image();
                 // Construct filename with base path for GitHub Pages
-                const basePath = process.env.NODE_ENV === 'production' ? '/my-portfolio' : '';
+                const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
                 const filename = `${basePath}/sequence/img_${i.toString().padStart(3, "0")}.webp`;
                 img.src = filename;
 
