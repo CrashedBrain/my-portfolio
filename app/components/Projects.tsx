@@ -1,42 +1,48 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { getBasePath } from "../utils/basePath";
-
-const basePath = getBasePath();
-
-const projects = [
-    {
-        id: 1,
-        title: "Prismio",
-        desc: "Interactive 3D Learning App",
-        tags: ["Flutter", "3D Visualization", "Education UI"],
-        image: `${basePath}/prismio.png`
-    },
-    {
-        id: 2,
-        title: "Jersey Shop",
-        desc: "Modern Sports E-Commerce Design",
-        tags: ["Web Design", "UI/UX", "Figma"],
-        image: `${basePath}/jersey_shop.png`
-    },
-    {
-        id: 3,
-        title: "Car Rental System",
-        desc: "Vehicle Booking Platform with Admin Panel",
-        tags: ["PHP", "HTML/CSS", "MySQL"],
-        image: `${basePath}/car_rental.png`
-    },
-    {
-        id: 4,
-        title: "Music Player App",
-        desc: "Sleek Audio Streaming Interface",
-        tags: ["Mobile App", "UI Design", "Visuals"],
-        image: `${basePath}/music_player.jpg`
-    },
-];
+import { useEffect, useState } from "react";
 
 export default function Projects() {
+    const [basePath, setBasePath] = useState("");
+
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.location.hostname.endsWith('github.io')) {
+            setBasePath('/my-portfolio');
+        }
+    }, []);
+
+    const projects = [
+        {
+            id: 1,
+            title: "Prismio",
+            desc: "Interactive 3D Learning App",
+            tags: ["Flutter", "3D Visualization", "Education UI"],
+            image: `${basePath}/prismio.png`
+        },
+        {
+            id: 2,
+            title: "Jersey Shop",
+            desc: "Modern Sports E-Commerce Design",
+            tags: ["Web Design", "UI/UX", "Figma"],
+            image: `${basePath}/jersey_shop.png`
+        },
+        {
+            id: 3,
+            title: "Car Rental System",
+            desc: "Vehicle Booking Platform with Admin Panel",
+            tags: ["PHP", "HTML/CSS", "MySQL"],
+            image: `${basePath}/car_rental.png`
+        },
+        {
+            id: 4,
+            title: "Music Player App",
+            desc: "Sleek Audio Streaming Interface",
+            tags: ["Mobile App", "UI Design", "Visuals"],
+            image: `${basePath}/music_player.jpg`
+        },
+    ];
+
     return (
         <section className="relative min-h-screen w-full bg-[#121212] py-32 px-6 md:px-12 flex flex-col items-center z-10">
 
