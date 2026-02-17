@@ -2,6 +2,7 @@ import ScrollyCanvas from "@/app/components/ScrollyCanvas"; // Ensure correct re
 import Projects from "@/app/components/Projects";
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,8 @@ export default function Home() {
         Using a simple spacer or direct placement.
       */}
       <Projects />
+      <Contact />
+
 
       {/* Footer */}
       <footer className="w-full py-10 flex flex-col items-center justify-center text-gray-500 text-sm">

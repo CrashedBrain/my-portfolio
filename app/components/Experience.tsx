@@ -8,14 +8,6 @@ export default function Experience() {
       Managing events with the organizer team.`,
         },
         {
-            role: "Documentation Team Co-ordinator",
-            organization: "PSTU Youthmappers",
-            year: "2022 - Present",
-            description: `Led the documentation of mapping activities, events, and trainings.
-      Supported visibility and outreach by promoting club activities.
-      Created blog posts, newsletters, and summary reports.`,
-        },
-        {
             role: "Assistant General Secretary",
             organization: "CSE Club PSTU",
             year: "2025 - Present",
@@ -24,9 +16,33 @@ export default function Experience() {
       Helped maintain documentation and reports of wing activities.`,
         },
         {
+            role: "Graphics Designer",
+            organization: "PSTU Youthmappers",
+            year: "2024 - 2025",
+            description: `Designed posters, banners, and social media content for various events.
+      Collaborated with the executive team to maintain brand consistency.
+      Created visual assets to promote club activities and workshops.`,
+        },
+        {
+            role: "Executive Member",
+            organization: "PSTU PHOTOGRAPHY CLUB",
+            year: "2024 - 2025",
+            description: `Participated in organizing photography exhibitions and workshops.
+      Assisted in mentoring new members and curating photo submissions.
+      Contributed to event coverage and visual storytelling projects.`,
+        },
+        {
+            role: "Documentation Team Co-ordinator",
+            organization: "PSTU Youthmappers",
+            year: "2023-2024",
+            description: `Led the documentation of mapping activities, events, and trainings.
+      Supported visibility and outreach by promoting club activities.
+      Created blog posts, newsletters, and summary reports.`,
+        },
+        {
             role: "Content Creator",
             organization: "PSTU PHOTOGRAPHY CLUB",
-            year: "2023 - Present",
+            year: "2023 - 2024",
             description: `Created and managed visual and written content for social media and events.
       Collaborated with photographers to publish engaging content.
       Handled social media posts, captions, and visual storytelling.`,
